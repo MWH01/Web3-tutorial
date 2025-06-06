@@ -16,7 +16,7 @@ contract FundTokenERC20 is ERC20 {
     }
 
     function mint(uint256 amountToMint) public {
-        require(fundMe.fundersToAmount[msg.sender] >= amountToMint, "not enough funders to mint token");
+        require(fundMe.fundersToAmount(msg.sender) >= amountToMint, "not enough funders to mint token");
         require(fundMe.getFundSuccess(), "The fundMe is not completed yet");//getter
          _mint(msg.sender, amountToMint);
          // 不是无限铸造

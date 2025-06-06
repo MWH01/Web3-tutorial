@@ -1,9 +1,9 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/mwh/Documents/Project/Web3/contracts/FundMe.sol": {
-      "lastModificationDate": 1749009245784,
-      "contentHash": "a0da1e12d5848399b821a0b7e35e9d6b",
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/contracts/FundMe.sol": {
+      "lastModificationDate": 1749192083571,
+      "contentHash": "e795b0c2d6c04601317db73d19c4805d",
       "sourceName": "contracts/FundMe.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -20,12 +20,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -39,8 +46,8 @@
         "FundMe"
       ]
     },
-    "/Users/mwh/Documents/Project/Web3/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
-      "lastModificationDate": 1748941466748,
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+      "lastModificationDate": 1749104133244,
       "contentHash": "64a3f906dc7696aa3c9fa8454b673be7",
       "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol",
       "solcConfig": {
@@ -58,12 +65,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -75,8 +89,232 @@
         "AggregatorV3Interface"
       ]
     },
-    "/Users/mwh/Documents/Project/Web3/contracts/FundToken.sol": {
-      "lastModificationDate": 1748941690608,
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/contracts/FundTokenERC20.sol": {
+      "lastModificationDate": 1749177650790,
+      "contentHash": "9e42662a1d3ba12038e482dfe26d1936",
+      "sourceName": "contracts/FundTokenERC20.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "./FundMe.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "FundTokenERC20"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1749104087009,
+      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1749104053351,
+      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1749104087008,
+      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1749104118871,
+      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/contracts/FundToken.sol": {
+      "lastModificationDate": 1749103812437,
       "contentHash": "7f83d4ad6c07d3c5717af5450e82954d",
       "sourceName": "contracts/FundToken.sol",
       "solcConfig": {
@@ -94,12 +332,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -111,8 +356,8 @@
         "FundToken"
       ]
     },
-    "/Users/mwh/Documents/Project/Web3/contracts/Lock.sol": {
-      "lastModificationDate": 1748941481799,
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/contracts/Lock.sol": {
+      "lastModificationDate": 1749103812436,
       "contentHash": "68c48b68d4cbdc3163147824efb3d464",
       "sourceName": "contracts/Lock.sol",
       "solcConfig": {
@@ -130,12 +375,19 @@
                 "evm.bytecode",
                 "evm.deployedBytecode",
                 "evm.methodIdentifiers",
-                "metadata"
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
               ],
               "": [
                 "ast"
               ]
             }
+          },
+          "metadata": {
+            "useLiteralContent": true
           }
         }
       },
@@ -146,6 +398,183 @@
       "artifacts": [
         "Lock"
       ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV2V3Interface.sol": {
+      "lastModificationDate": 1749104133229,
+      "contentHash": "a045cdf1098c0a0735bee2f727fee0aa",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV2V3Interface.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "./AggregatorInterface.sol",
+        "./AggregatorV3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AggregatorV2V3Interface"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorInterface.sol": {
+      "lastModificationDate": 1749104133233,
+      "contentHash": "1739f42cb7ceb036e6fd94b9d9990506",
+      "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorInterface.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "AggregatorInterface"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/tests/MockV3Aggregator.sol": {
+      "lastModificationDate": 1749104124047,
+      "contentHash": "964c2024720c0de4d9ed9fa3907afa75",
+      "sourceName": "@chainlink/contracts/src/v0.8/tests/MockV3Aggregator.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "../shared/interfaces/AggregatorV2V3Interface.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "MockV3Aggregator"
+      ]
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/contracts/mocks/MockV3Aggregator.sol": {
+      "lastModificationDate": 1749179900054,
+      "contentHash": "f7ba731d64ab023d4da134d2590cc690",
+      "sourceName": "contracts/mocks/MockV3Aggregator.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": true
+          }
+        }
+      },
+      "imports": [
+        "@chainlink/contracts/src/v0.8/tests/MockV3Aggregator.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": []
     }
   }
 }
