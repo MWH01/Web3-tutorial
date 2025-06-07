@@ -4,11 +4,11 @@ module.exports = async({getNamedAccounts, deployments}) => {
     // const getNamedAccounts = await hre.getNamedAccounts();
     // const deployments = await hre.deployments;
     if(DEVELOPMENT_CHAINS.includes(network.name)){
-        const {firstAccount} = await getNamedAccounts();
+        const {deployer} = await getNamedAccounts();
         const {deploy} = deployments;
         console.log("Deploying Mock...");
         await deploy("MockV3Aggregator", {
-            from: firstAccount,
+            from: deployer,
             args: [DECIMAL, INITIAL_ANSWER],
             log: true,
         })
@@ -17,4 +17,4 @@ module.exports = async({getNamedAccounts, deployments}) => {
     }
 }
 
-module.exports.tags = ["Mock"];
+module.exports.tags = ["Mocks"];

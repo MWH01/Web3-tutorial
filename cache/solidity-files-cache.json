@@ -2,8 +2,8 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/mwh/Documents/Project/Web3-tutorial-master/contracts/FundMe.sol": {
-      "lastModificationDate": 1749192083571,
-      "contentHash": "e795b0c2d6c04601317db73d19c4805d",
+      "lastModificationDate": 1749272774942,
+      "contentHash": "fa34182e9e61fe100e51273429ad826d",
       "sourceName": "contracts/FundMe.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -32,7 +32,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -47,7 +47,7 @@
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
-      "lastModificationDate": 1749104133244,
+      "lastModificationDate": 1749269024492,
       "contentHash": "64a3f906dc7696aa3c9fa8454b673be7",
       "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV3Interface.sol",
       "solcConfig": {
@@ -77,7 +77,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -120,7 +120,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -136,8 +136,8 @@
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1749104087009,
-      "contentHash": "3ae5166c6827a9cf1a7a462d1632b464",
+      "lastModificationDate": 1749269059776,
+      "contentHash": "57d79df281f57bbb1b09214c7914f877",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -166,25 +166,26 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
       "imports": [
         "./IERC20.sol",
         "./extensions/IERC20Metadata.sol",
-        "../../utils/Context.sol"
+        "../../utils/Context.sol",
+        "../../interfaces/draft-IERC6093.sol"
       ],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.20"
       ],
       "artifacts": [
         "ERC20"
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1749104053351,
-      "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
+      "lastModificationDate": 1749269059213,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -213,21 +214,21 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.20"
       ],
       "artifacts": [
         "Context"
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1749104087008,
-      "contentHash": "df36f7051335cd1e748b1b6463b7fdd3",
+      "lastModificationDate": 1749269059776,
+      "contentHash": "8f19f64d2adadf448840908bbaf431c8",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -256,21 +257,21 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.20"
       ],
       "artifacts": [
         "IERC20"
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1749104118871,
-      "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
+      "lastModificationDate": 1749269060029,
+      "contentHash": "794db3115001aa372c79326fcfd44b1f",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
         "version": "0.8.28",
@@ -299,7 +300,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -307,7 +308,7 @@
         "../IERC20.sol"
       ],
       "versionPragmas": [
-        "^0.8.0"
+        "^0.8.20"
       ],
       "artifacts": [
         "IERC20Metadata"
@@ -344,7 +345,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -387,7 +388,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -400,7 +401,7 @@
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV2V3Interface.sol": {
-      "lastModificationDate": 1749104133229,
+      "lastModificationDate": 1749269024492,
       "contentHash": "a045cdf1098c0a0735bee2f727fee0aa",
       "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorV2V3Interface.sol",
       "solcConfig": {
@@ -430,7 +431,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -446,7 +447,7 @@
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorInterface.sol": {
-      "lastModificationDate": 1749104133233,
+      "lastModificationDate": 1749269024493,
       "contentHash": "1739f42cb7ceb036e6fd94b9d9990506",
       "sourceName": "@chainlink/contracts/src/v0.8/shared/interfaces/AggregatorInterface.sol",
       "solcConfig": {
@@ -476,7 +477,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -489,7 +490,7 @@
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@chainlink/contracts/src/v0.8/tests/MockV3Aggregator.sol": {
-      "lastModificationDate": 1749104124047,
+      "lastModificationDate": 1749269019613,
       "contentHash": "964c2024720c0de4d9ed9fa3907afa75",
       "sourceName": "@chainlink/contracts/src/v0.8/tests/MockV3Aggregator.sol",
       "solcConfig": {
@@ -519,7 +520,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -534,7 +535,7 @@
       ]
     },
     "/Users/mwh/Documents/Project/Web3-tutorial-master/contracts/mocks/MockV3Aggregator.sol": {
-      "lastModificationDate": 1749179900054,
+      "lastModificationDate": 1749268974609,
       "contentHash": "f7ba731d64ab023d4da134d2590cc690",
       "sourceName": "contracts/mocks/MockV3Aggregator.sol",
       "solcConfig": {
@@ -564,7 +565,7 @@
             }
           },
           "metadata": {
-            "useLiteralContent": true
+            "useLiteralContent": false
           }
         }
       },
@@ -575,6 +576,51 @@
         "^0.8.20"
       ],
       "artifacts": []
+    },
+    "/Users/mwh/Documents/Project/Web3-tutorial-master/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1749269059207,
+      "contentHash": "267d92fe4de67b1bdb3302c08f387dbf",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+      "solcConfig": {
+        "version": "0.8.28",
+        "settings": {
+          "evmVersion": "paris",
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "evm.gasEstimates"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC1155Errors",
+        "IERC20Errors",
+        "IERC721Errors"
+      ]
     }
   }
 }

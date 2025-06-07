@@ -8,23 +8,26 @@ const { DEVELOPMENT_CHAINS, networkConfig, LOCK_TIME, CONFIRMATIONS } = require(
 module.exports = async({getNamedAccounts, deployments}) => {
     // const getNamedAccounts = await hre.getNamedAccounts();
     // const deployments = await hre.deployments;
-    const {firstAccount} = await getNamedAccounts();
+    const { deployer } = await getNamedAccounts();
     const {deploy, get} = deployments;
-    let dataFeedAddr;
+    let dataFeedAddr
+    let confirmations
     if(DEVELOPMENT_CHAINS.includes(network.name)){
         // 开发网络 - 使用Mock聚合器
         const mockAggregator = await get("MockV3Aggregator");
         dataFeedAddr = mockAggregator.address
+        confirmations = 0
     }else{
         dataFeedAddr = networkConfig[network.config.chainId].ethUsdDataFeed
+        confirmations = CONFIRMATIONS
     }
-    console.log("First Account:", firstAccount);
+    console.log("First Account:", deployer);
     console.log("Deploying FundMe...");
     const fundMe = await deploy("FundMe", {
-        from: firstAccount,
+        from: deployer,
         args: [LOCK_TIME, dataFeedAddr],
         log: true,
-        waitConfirmations: CONFIRMATIONS, // 等待5个区块确认
+        waitConfirmations: confirmations, // 等待区块确认
     })
 
     // verify the contract on Etherscan 
@@ -38,5 +41,4 @@ module.exports = async({getNamedAccounts, deployments}) => {
     }
 }
 
-module.exports.dependencies = ["Mock"];
 module.exports.tags = ["FundMe"];

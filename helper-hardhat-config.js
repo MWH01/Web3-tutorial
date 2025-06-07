@@ -11,7 +11,7 @@ const networkConfig = {
     },
     97: {
         name: "bscTestnet",
-        ethUsdDataFeed: "0x0567F2323251f0Aab15c8dfb1967e4e3d5a2c3f8" // BSC Testnet ETH/USD Data Feed
+        ethUsdDataFeed: "0x0567F2323251f0Aab1s5c8dfb1967e4e3d5a2c3f8" // BSC Testnet ETH/USD Data Feed
     },
 }
 
