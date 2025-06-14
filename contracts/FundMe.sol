@@ -11,13 +11,13 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interf
 contract FundMe{
     mapping (address => uint256) public fundersToAmount;
 
-    uint256 MINIMUM_VALUE = 100 * 10 ** 8; // USD
+    uint256 public constant MINIMUM_VALUE = 100 * 10 ** 8; // USD
 
     AggregatorV3Interface public dataFeed;
     // 目标 1000 美元
     uint256 constant TARGET = 1000 * 10 ** 8;
     // 收款方地址（自己）
-    address public owner;
+    address public immutable owner;
     // 时间锁
     uint256 deploymentTimestamp;
     uint256 lockTime;
@@ -108,5 +108,13 @@ contract FundMe{
     modifier onlyOwner() {
         require(msg.sender == owner, "this function can only be called by owner");
         _;
+    }
+
+    receive() external payable {
+        fund();
+    }
+
+    fallback() external payable {
+        fund();
     }
 }
